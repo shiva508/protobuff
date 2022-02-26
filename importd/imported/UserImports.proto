@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "protobuff/importd/basic/Date.proto";
+import "date_imp.proto";
 
 message UserImports{
   int32 age=1;
@@ -16,7 +16,7 @@ message UserImports{
         EYE_BROWN=2;
         EYE_BLUE=3;
     }
-    EyeColor eye_colour=8;
+    EyeColour eye_colour=8;
     Date birthday=9;
     message Address{
         string address_line_1=1;

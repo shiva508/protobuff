@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "building-pkg.proto";
+import "street-pkg.proto";
+import "city-pkg.proto";
+
+message PkgTmpAddress{
+    com.building.BuildingPkg building_import=1;
+    com.street.StreetPkg street_import=2;
+    com.city.CityPkg city_import=3;
+}

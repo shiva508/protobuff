@@ -1,5 +1,5 @@
 syntax = "proto3";
-
+package main;
 message User{
     int32 age=1;
     string first_name=2;
@@ -14,5 +14,5 @@ message User{
         EYE_BROWN=2;
         EYE_BLUE=3;
     }
-    EyeColor eye_colour=8;
+    EyeColour eye_colour=8;
 }

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+message TmpAddress{
+
+message CityNested{
+    string name=1;
+    string zip_code=2;
+    string country_name=3;
+}
+
+message StreetNested{
+        string street_name=1;
+        CityNested city_details=2;
+}
+
+message BuildingNested{
+    string building_name=1;
+    string building_number=2;
+    StreetNested street_details=3;
+}
+
+        BuildingNested building_nested=1;
+        StreetNested street_nested=2;
+        CityNested city_nested=3;
+}

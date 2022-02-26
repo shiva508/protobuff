@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "street-pkg.proto";
+package com.building;
+
+message BuildingPkg{
+    string building_name=1;
+    string building_number=2;
+    com.street.StreetPkg street_details=3;
+}

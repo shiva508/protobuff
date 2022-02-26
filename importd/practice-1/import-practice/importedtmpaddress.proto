@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "building.proto";
+import "street.proto";
+import "city.proto";
+
+message ImportedTmpAddress{
+    BuildingImport building_import=1;
+    StreetImport street_import=2;
+    CityImport city_import=3;
+}

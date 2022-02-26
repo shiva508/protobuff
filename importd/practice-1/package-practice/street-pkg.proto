@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "city-pkg.proto";
+package com.street;
+
+message StreetPkg{
+   string street_name=1;
+   com.city.CityPkg city_details=2; 
+}
